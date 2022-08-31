@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <title>Forest</title>
+    <script src="https://kit.fontawesome.com/bba4003ae2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- @include 'nav.kit' -->
+    <!-- @include 'header.kit' -->
+    <main>
+        <section class="contact">
+            <div class="wrapper">
+                <div class="contact-head">
+                    <h2>Skontaktuj sie z nami</h2>
+                    <p>Chcesz zadać dodatkowe pytania? Napisz do nas wiadomość!</p>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-details">
+                        <div class="contact-information">
+                            <h3>Informacje kontaktowe</h3>
+                            <p>Skontaktuj sie z nami a odpowiemy w ciągu 24 godzin!</p>
+                        </div>
+                        <div class="contact-data">
+                            <p><i class="fa-solid fa-phone icon-color"></i> +48 420 69 2137</p>
+                            <p><i class="fa-solid fa-envelope icon-color"></i> forest@kontakt.pl</p>
+                            <p><i class="fa-solid fa-location-dot icon-color"></i> ul.Jasnogórska 2 Kraków</p>
+                        </div>
+                        <div class="contact-social">
+                            <a href=""><i class="fa-brands fa-facebook icon-color"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter icon-color"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram icon-color"></i></a>
+                            <a href=""><i class="fa-brands fa-pinterest icon-color"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="contact-formbox">
+                        <form>
+                            <div class="send-popup">
+                              <p class="head-popup">Dziękujemy za kontakt!</p>
+                              <p class="text-popup">Odezwiemy sie najszybciej jak tylko możemy.</p>
+                              <p><i class="fa-solid fa-envelope-open"></i></p>
+                            </div>
+                            <div class="name-section">
+                                <div class="single-section">
+                                    <label for="name">Imie</label>
+                                    <input type="text" placeholder="Wpisz swoje imie" id="name">
+                                    <p class="error-text"></p>
+
+                                </div>
+                                <div class="single-section">
+                                    <label for="last-name">Nazwisko</label>
+                                    <input type="text" placeholder="Wpisz swoje nazwisko" id="last-name">
+                                    <p class="error-text"></p>
+                                </div>
+                            </div>
+                            <div class="information-section">
+                                <div class="single-section">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" placeholder="Wpisz swój adres e-mail" id="email">
+                                    <p class="error-text"></p>
+                                </div>
+                                <div class="single-section">
+                                    <label for="phone">Numer telefonu</label>
+                                    <input type="tel" placeholder="Wpisz swój numer telefonu" id="phone">
+                                    <p class="error-text"></p>
+                                </div>
+                            </div>
+                            <div class="message-section">
+                                <div class="single-section">
+                                    <label>Wiadomość</label>
+                                    <textarea id="message" placeholder="Wpisz swoją wiadomość"></textarea>
+                                    <p class="error-text"></p>
+                                </div>
+
+                            </div>
+                            <div class="submit-btn">
+                                <button class="submit" type="submit">Wyślij wiadomość</button>
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+        </section>
+
+        <section class="map">
+            <div class="map-info">
+                <h3>Chcesz nas odwiedzić osobiście? Nie ma problemu!</h3>
+            </div>
+            <div class="google-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.593805595492!2d19.8928489!3d50.0881881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1661274443484!5m2!1spl!2spl"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- @include 'footer.kit' -->
+    <script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>

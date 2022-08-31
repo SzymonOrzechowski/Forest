@@ -1,0 +1,127 @@
+// .nav-menu-mobile{
+//     display: none;
+// }
+nav {
+	// position: fixed;
+	// top: 0;
+	position: sticky;
+	top: 0;
+	// left: 0;
+	width: 100%;
+	// height: 100vh;
+	// height: 100%;
+	z-index: 5;
+	background-color: rgb(250, 250, 250);
+	.nav-desktop {
+		display: none;
+		justify-content: space-evenly;
+		// background-color: aqua;
+		.logo {
+			display: flex;
+			cursor: pointer;
+			padding: 0.35em;
+			font-size: 3rem;
+			margin: 0.2em;
+			.logo-text-destkop {
+				font-size: 3rem;
+				margin-left: 0.25em;
+			}
+		}
+		.desktop-menu {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			// background-color: brown;
+			.desktop-link {
+				text-decoration: none;
+				font-size: 2rem;
+				margin: 0 1em;
+				color: black;
+			}
+		}
+	}
+
+	.nav-mobile {
+		// display: flex;
+		
+		.nav-up {
+			z-index: 2;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+			
+			.bars-btn {
+				padding: 0.3em;
+				margin: 0.1em;
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				font-size: 4rem;
+			}
+			// .bars-btn:focus {
+			// 	border: 1px solid black;
+			// 	outline: none;
+			// }
+		}
+		.logo {
+			cursor: pointer;
+			padding: 0.35em;
+			display: flex;
+			font-size: 3rem;
+			margin: 0 0.35em;
+			.logo-text-mobile {
+				font-size: 3.5rem;
+				margin-left: 0.25em;
+			}
+		}
+		.mobile-menu {
+			// position: sticky;
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+			width: 100%;
+			height: 100vh;
+			font-size: 4.5rem;
+			animation: showMenu 1s;
+			// margin-bottom: 3em;
+
+			a {
+				color: black;
+				margin: 0.3em;
+				text-decoration: none;
+				padding: 0.5em;
+			}
+		}
+		.active {
+			display: flex;
+			// background-color: aliceblue;
+		}
+	}
+}
+
+@keyframes showMenu {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	nav {
+		.nav-desktop {
+			display: flex;
+		}
+
+		.nav-mobile {
+			.nav-up {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.header {
+	width: 100%;
+	height: 40vh;
+	.hero-img {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: url('../img/jungle640.jpg');
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+		.hero-shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color: #000000, $alpha: 0.65);
+			z-index: -1;
+		}
+		.hero-text {
+			color: white;
+			z-index: 1;
+			font-size: 1.7rem;
+			margin: 4em;
+			.header-text {
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+@media (min-width: 420px) {
+	.header {
+		.hero-img {
+			.hero-text {
+				font-size: 2.2rem;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		height: 50vh;
+	}
+}
+@media (min-width: 992px) {
+	.header {
+		.hero-img {
+			.hero-text {
+				font-size: 2.4rem;
+			}
+		}
+	}
+}
+@media (min-width: 1400px) {
+	.header {
+		.hero-img {
+			background-image: url('../img/jungle1920.jpg');
+			.hero-text {
+				margin-right: 13em;
+			}
+		}
+	}
+}

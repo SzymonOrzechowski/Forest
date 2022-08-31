@@ -1,0 +1,197 @@
+@use 'nav';
+@use 'header';
+@use '_offers';
+@use 'footer';
+@use 'additional';
+@use 'contact';
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+// body {
+// 	// background-color: rgba(143, 155, 165, 0.651);
+// 	// position: relative;
+// 	// overflow: hidden;
+// }
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+}
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.section-heading {
+	text-align: center;
+	margin: 1em 0;
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	.about-us-photo {
+		margin: 0 5em;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.about-us-text {
+		margin: 0 1.4em;
+		text-align: center;
+		font-weight: 300;
+		// width: 50%;
+		h3 {
+			font-size: 2.1rem;
+			margin: 0.6em;
+		}
+		p {
+			font-size: 1.5rem;
+			margin-bottom: 2em;
+		}
+	}
+}
+.adventure {
+	margin: 3em 0;
+	.adventure-hero-img {
+		position: relative;
+		background-image: url('../img/girl_640.jpg');
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 25vh;
+		z-index: 0;
+		.adventure-hero-text {
+			color: white;
+			font-size: 1.6rem;
+			z-index: 1;
+			border: 1px solid white;
+			padding: 0.85em 2.1em;
+		}
+		.adventure-hero-shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color: #000000, $alpha: 0.65);
+			z-index: -1;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.container {
+		.about-us-text {
+			h3 {
+				font-size: 2.8rem;
+			}
+			p {
+				font-size: 1.7rem;
+				margin: 0 2em;
+			}
+		}
+	}
+	.adventure {
+		.adventure-hero-img {
+			.adventure-hero-text {
+				padding: 1.3em 5em;
+			}
+		}
+	}
+}
+.other-offers {
+	text-align: center;
+	font-size: 2.4rem;
+	margin: 2em 0.6em;
+	a {
+		text-decoration: none;
+		font-size: 2.6rem;
+		transition: border-bottom 0.3s;
+		border-bottom: 3px solid transparent;
+	}
+	a:hover {
+		border-bottom: 3px solid black;
+	}
+	a:focus{
+		color: #000000;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		flex-direction: row;
+		margin-bottom: 2em;
+		.about-us-photo {
+			width: 50%;
+			margin: 0 2.5em;
+		}
+		.about-us-text {
+			width: 50%;
+			text-align: start;
+			h3 {
+				font-size: 2.7rem;
+				margin: 0 0 0.4em 0;
+			}
+			p {
+				font-size: 1.7rem;
+				margin: 0;
+			}
+		}
+	}
+	.adventure {
+		margin: 7em 0;
+		.adventure-hero-img {
+			.adventure-hero-text {
+				padding: 2em 10em;
+				font-size: 2rem;
+			}
+		}
+	}
+}
+@media (min-width: 1024px) {
+	.container {
+		.about-us-text {
+			width: 50%;
+			text-align: start;
+			margin: 0 4em;
+			h3 {
+				font-size: 2.9rem;
+				margin: 0 0 0.4em 0;
+			}
+			p {
+				font-size: 2.1rem;
+			}
+		}
+	}
+	.adventure {
+		.adventure-hero-img {
+			background-image: url('../img/girl1920.jpg');
+			height: 35vh;
+			.adventure-hero-text {
+				padding: 1em 6em;
+				font-size: 3.2rem;
+			}
+		}
+	}
+}
+@media (min-width: 1400px) {
+	.adventure {
+		.adventure-hero-img {
+			.adventure-hero-text {
+				padding: 1em 7.7em;
+				font-size: 3.5rem;
+			}
+		}
+	}
+}
